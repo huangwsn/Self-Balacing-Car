@@ -41,9 +41,8 @@ void moveWheel(int acc_y, int acc_z);
 byte values[6];
 
 
+
 /*----------------------------------- Module Code ----------------------------------*/
-
-
 void setup() {
   initializeAccelerometer();
   initializeMotor();
@@ -67,8 +66,7 @@ void loop() {
     moveWheel(acc_y, acc_z);
   } else {
     stopWheel();
-  }
-  
+  } 
 }
 /*-------------------------------- Helper Functions --------------------------------*/
 /*************************************************************************************
@@ -79,8 +77,8 @@ void loop() {
  * Returns
  *              None
  * Description
- *              This function initializes the required pins and setting for the accelerometer 
- *              (ADXL345) using I2C protocol.
+ *              This function initializes the required pins and setting for the 
+ *              accelerometer (ADXL345) using I2C protocol.
  * Author
  *              Winson Huang
  *************************************************************************************/
